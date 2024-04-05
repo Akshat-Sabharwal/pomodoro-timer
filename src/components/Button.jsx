@@ -5,8 +5,9 @@ export const TimerButton = ({ text, onClick }) => {
     <Button
       rounded="lg"
       width="70%"
-      py="1.7rem"
-      fontSize="1.5rem"
+      minWidth="fit-content"
+      py={["1.5rem", "1.7rem", "1.7rem"]}
+      fontSize={["1.2rem", "1.3rem", "1.5rem"]}
       variant="outline"
       borderColor={useColorModeValue("blackAlpha.800", "white")}
       color={useColorModeValue("blackAlpha.800", "white")}
@@ -27,8 +28,8 @@ export const TimerIconButton = ({ icon, onClick }) => {
     <IconButton
       rounded="lg"
       width="50%"
-      py="1.7rem"
-      fontSize="1.5rem"
+      py={["1.5rem", "1.7rem", "1.7rem"]}
+      fontSize={["1.2rem", "1.3rem", "1.5rem"]}
       icon={icon}
       variant="outline"
       borderColor={useColorModeValue("blackAlpha.800", "white")}

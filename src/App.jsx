@@ -293,23 +293,23 @@ export const App = () => {
         </ModalContent>
       </Modal>
       <Flex
-        width="70%"
+        width="90%"
         justify="center"
         align="center"
         flexDirection="column"
-        pb="7rem"
-        gap={10}
+        mb="4rem"
+        gap={[4, 7, 10]}
       >
-        <VStack>
+        <VStack gap={[0, 0, 0]}>
           <Heading
-            fontSize="4.5rem"
+            fontSize={["3rem", "3.5rem", "4.5rem"]}
             backgroundColor={config.color}
             color={useColorModeValue("blackAlpha.700", "white")}
           >
             {state.isWork ? "Work" : "Break"} Time
           </Heading>
           <Heading
-            fontSize="10rem"
+            fontSize={["6.5rem", "8rem", "10rem"]}
             backgroundColor={config.color}
             color={useColorModeValue("blackAlpha.800", "white")}
           >
@@ -319,11 +319,13 @@ export const App = () => {
           </Heading>
         </VStack>
         <Flex
-          width="40%"
+          width="90%"
           justify="space-evenly"
+          maxWidth="22.5rem"
+          minWidth="15rem"
           align="center"
-          gap="2rem"
-          paddingInline="2rem"
+          gap={["0.8rem", "1.5rem", "2rem"]}
+          paddingInline={["1rem", "1.5rem", "2rem"]}
         >
           <TimerIconButton icon={<HamburgerIcon />} onClick={onOpen} />
           {state.hasStarted ? (
